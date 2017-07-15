@@ -224,5 +224,7 @@ function my_post_queries( $query ) {
 add_action( 'pre_get_posts', 'my_post_queries' ); 
 load_theme_textdomain( 'saaremaasaunad', get_template_directory().'/languages' );
 
+include_once  get_template_directory(). '/vx-templates/sections-acf-fields.php';
+
 
 //add_filter('acf/settings/show_admin', '__return_false');
