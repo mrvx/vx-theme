@@ -6,7 +6,6 @@ Template Name: Suured alad
 
 get_header(); ?>
 
-
 <div id="content" class="full-width">
 
 	<?php while(have_posts()): the_post(); ?>
