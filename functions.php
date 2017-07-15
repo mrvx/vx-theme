@@ -3,7 +3,7 @@
 
 
 // Add your theme support ( cf :  http://codex.wordpress.org/Function_Reference/add_theme_support )
-/*function customThemeSupport() {
+function customThemeSupport() {
 	global $wp_version;
 	
 	add_theme_support( 'menus' );
@@ -18,7 +18,7 @@
 	} else {
 		automatic_feed_links();
 	}
-}*/
+}
 add_action( 'after_setup_theme', 'customThemeSupport' );
 
 function register_my_menus() {
@@ -225,3 +225,4 @@ add_action( 'pre_get_posts', 'my_post_queries' );
 load_theme_textdomain( 'saaremaasaunad', get_template_directory().'/languages' );
 
 
+//add_filter('acf/settings/show_admin', '__return_false');

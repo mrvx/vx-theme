@@ -8,7 +8,8 @@ get_header(); ?>
 
 
 <div id="content" class="full-width">
-<?php // get_template_part( 'slider/elegant-slider', 'elegtant-slider' ); ?>
+<h1>TEST TEST TEST</h1>
+
 
 <?php echo do_shortcode('[ew_slider]'); ?>
 
