@@ -1,0 +1,144 @@
+@import 'variables';
+
+//
+// Headings
+//
+html, body
+{
+  font-size: $font-size-base * .7;
+  color: $body-color;
+  line-height: $body-line-height;
+
+  @media #{$tablet-up} {
+      font-size: $font-size-base;
+    }
+}
+
+
+
+  p {
+    font-size: $font-size-base;
+    color: $body-color;
+    line-height: $body-line-height;
+    padding: $paragraph-padding;
+		margin: 0;
+
+  }
+
+#content, footer {
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+
+
+
+    font-family: $headings-font-family;
+    line-height: 100%;
+
+ 
+  }
+
+
+  h1 { 
+    font-size: $font-size-h1; 
+    padding: $font-padding-h1;
+    margin: $font-margins-h1;
+    color: $font-colors-h1;
+    font-weight: $font-weights-h1;
+    text-transform: $font-transform-h1;
+
+  }
+
+  h2 { 
+    font-size: $font-size-h2;
+    padding: $font-padding-h2;
+    margin: $font-margins-h2;
+    color: $font-colors-h2;
+    font-weight: $font-weights-h2;
+    text-transform: $font-transform-h2;
+  }
+
+  h3 { 
+    font-size: $font-size-h3;
+    padding: $font-padding-h3;
+    margin: $font-margins-h3;
+    color: $font-colors-h3;
+    font-weight: $font-weights-h3;
+    text-transform: $font-transform-h3;
+
+  }
+
+  h4 { 
+    font-size: $font-size-h4;
+    padding: $font-padding-h4;
+    margin: $font-margins-h4;
+    color: $font-colors-h4;
+    font-weight: $font-weights-h4;
+    text-transform: $font-transform-h4;
+  }
+  h5 { font-size: $font-size-h5;
+    padding: $font-padding-h5;
+    margin: $font-margins-h5;
+    color: $font-colors-h5;
+    font-weight: $font-weights-h5;
+    text-transform: $font-transform-h5;
+  }
+  h6 { font-size: $font-size-h6;
+    padding: $font-padding-h6;
+    margin: $font-margins-h6;
+    color: $font-colors-h6;
+    font-weight: $font-weights-h6;
+    text-transform: $font-transform-h6;
+  }
+
+  .display-1 { 
+    font-size: $display1-size;
+    font-weight: $display1-weight;
+    margin: 0;
+    padding: 0; 
+    line-height: 140%;
+
+  }
+
+  .display-2 { 
+    font-size: $display2-size;
+    font-weight: $display2-weight;
+    margin: 0;
+    padding: 0; 
+    line-height: 140%;
+
+  }
+
+  .display-3 { 
+    font-size: $display3-size;
+    font-weight: $display3-weight;
+    margin: 0;
+    padding: 0; 
+    line-height: 140%;
+
+  }
+
+  .display-4 { 
+    font-size: $display4-size;
+    font-weight: $display4-weight;
+    margin: 0;
+    padding: 0; 
+    line-height: 140%;
+
+  }
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus
+  {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+
+
+

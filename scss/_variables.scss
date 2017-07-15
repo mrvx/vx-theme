@@ -1,0 +1,326 @@
+
+
+//Muutujad
+//
+//Sisukord
+//
+//Colors - värvid
+//Brand colors - brändivärvid
+//Body - põhiosa
+//Links-lingid
+//Typography - tüpograafia/trükindus
+//Headings -pealkirjad
+//Tables -tabelid
+//Buttons - nupud
+//Menu - menüü
+//Slider-slaider
+//Forms-vormid
+
+
+//Colors - värvid 
+
+$global-transition:      all 0.3s !default;
+//
+//erinevad hallid toonid
+$gray-dark:                 #444 !default;
+$gray:                      #55595c !default;
+$gray-light:                #818a91 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+
+//Brand colors - brändivärvid
+
+$brand-primary:         #D61400; //Lehe peamine/esmane (1) värvitoon
+$brand-secondary:       #bc4f4f; //Lehe sekundaarne (2) värvitoon
+$brand-third:           #ffff5f; // lehe kolmas (3) värvitoon
+$brand-success:         #5cb85c; // positiivse teate värv
+$brand-warning:         #f0ad4e; // hoiatusteate värv
+$brand-danger:           #d9534f; // veateate värv
+$brand-info:            #5bc0de; //informatiivse teate värv
+$brand-dark:            $gray-dark; //informatiivse teate värv
+
+// Body - põhiosa
+//
+// Põhiosa seaded
+
+$body-bg:               #fff !default;
+$body-bg-img:       url("../images/bg1.jpg") !default;
+
+$body-color:           $gray-dark !default;
+$body-line-height:            130% !default;
+$paragraph-padding:          0.5rem 0 !default;
+
+// Media Queris
+$gutter-width: 30px;
+$gut: $gutter-width * .5;
+
+
+$desktop : 1400px;
+$laptop : 1140px;
+$tablet: 768px;
+$mobile-lg: 500px;
+$mobile-sm: 360px;
+
+	$max-desktop : $desktop + $gutter-width - 1px;
+	$max-laptop : $laptop + $gutter-width - 1px;
+	$max-tablet : $tablet + $gutter-width - 1px;
+	$max-mobile-lg : $mobile-lg + $gutter-width - 1px;
+	$max-mobile-sm : $mobile-sm + $gutter-width - 1px;
+
+	$min-desktop : $desktop + $gutter-width;
+	$min-laptop : $laptop + $gutter-width;
+	$min-tablet : $tablet + $gutter-width;
+	$min-mobile-lg : $mobile-lg + $gutter-width;
+	$min-mobile-sm : $mobile-sm + $gutter-width;
+
+
+		$xsmall-only: "screen and (max-width: 500px)";
+		$mobile-sm-up: "screen and (min-width: 400px)";
+		$mobile-lg-up: "screen and (min-width: 768px)";
+		$tablet-up: "screen and (min-width: 860px)";
+		$laptop-up: "screen and (min-width: 1200px)";
+		$desktop-up: "screen and (min-width: 1400px)";
+
+
+
+// Links-lingid
+//
+//Linkide stiilid
+$link-color:                 $brand-primary !default;
+$link-decoration:            none !default;
+$link-hover-color:           darken($link-color, 15%) !default;
+$link-hover-decoration:      underline !default;
+
+
+// Typography - tüpograafia/trükindus
+//
+
+$font-family-base: 'Quicksand', sans-serif; // põhi kirjastiil
+
+
+$font-light: $font-family-base; // kitsas/kerge kirjastiil
+$font-bolder: $font-family-base; // rõhutatud/bold kirjastiil
+
+$font-size-base:          18px;      // body kirja suurus ehk põhiline kirjasuurus üle kodulehe 
+$font-weight-base:        normal; //kirjastiili paksus
+$line-height-base:        100%; //põhiline reavahe 
+
+// Headings -pealkirjad
+//
+$headings-font-family:      'Ubuntu', sans-serif !default;
+
+$font-size-root:             18px !default; //juur kirjastiili suuruse defineerin ainult siin
+
+$font-size-base:             1rem !default; //seda muutujat kasutan edaspidi
+
+// defineerin tähesuurused vastavalt ekraani mõõdule
+$font-size-lg:               4.25rem !default; 
+$font-size-sm:               .875rem !default;
+$font-size-xs:               .75rem !default;
+
+$font-size-h1:              2.5rem  !default;
+$font-size-h2:               2.0rem !default;
+$font-size-h3:               2.2rem !default;
+$font-size-h4:               1.5rem !default;
+$font-size-h5:               1.25rem !default;
+$font-size-h6:               1rem !default;
+
+//Headings paddings-pealkirja sisemine ruum
+$font-padding-h1:               20px 0 10px 0 !default;
+$font-padding-h2:               15px 0 15px 0 !default;
+$font-padding-h3:               15px 0 15px 0 !default;
+$font-padding-h4:               10px 0 15px 0 !default;
+$font-padding-h5:               10px 0 15px 0 !default;
+$font-padding-h6:               10px 0 15px 0 !default;
+
+//Headings margins-pealkirjade välimine ruum
+$font-margins-h1:               20px 0 10px 0 !default;
+$font-margins-h2:               0 0 0 0 !default;
+$font-margins-h3:               0 0 0 0 !default;
+$font-margins-h4:               0 0 0 0 !default;
+$font-margins-h5:               0 0 0 0 !default;
+$font-margins-h6:               0 0 0 0 !default;
+
+//Headings colors-pealkirjade värv
+$font-colors-h1:               $body-color !default;
+$font-colors-h2:               $brand-primary  !default;
+$font-colors-h3:               $brand-primary  !default;
+$font-colors-h4:               $body-color !default;
+$font-colors-h5:               $body-color !default;
+$font-colors-h6:               $body-color !default;
+
+//Headings weights-pealkirjade rõhutatus
+$font-weights-h1:               normal !default;
+$font-weights-h2:               normal  !default;
+$font-weights-h3:               normal  !default;
+$font-weights-h4:               normal !default;
+$font-weights-h5:               normal !default;
+$font-weights-h6:               normal !default;
+
+//Headings text-transform- pealkirjade stiil- suurtähed, väiketähed
+$font-transform-h1:               none !default;
+$font-transform-h2:               none  !default;
+$font-transform-h3:               none  !default;
+$font-transform-h4:               none !default;
+$font-transform-h5:               none !default;
+$font-transform-h6:               none !default;
+
+// Hüüdlausete suurused 
+//
+$display1-size:               6rem !default;
+$display2-size:               5.5rem !default;
+$display3-size:               4.5rem !default;
+$display4-size:               3.5rem !default;
+
+$display1-weight:             300 !default; // 300 õhuke, 400 normaalne, 600 paks
+$display2-weight:             300 !default;
+$display3-weight:             300 !default;
+$display4-weight:             300 !default;
+
+//Border radius - joone kumerus
+//
+$border-radius:                 4px !default;
+$border-radius-lg:              6px !default;
+$border-radius-sm:              2px !default;              
+
+
+
+//Tables -tabelid
+//
+$table-cell-padding:            .75rem !default;
+
+$border-width:                  1px !default;
+$table-bg:                      transparent !default;
+$table-bg-accent:               #f9f9f9 !default;
+$table-bg-hover:                #f5f5f5 !default;
+
+
+$table-border-width:            $border-width !default;
+$table-border-color:            $gray-lighter !default;
+
+//Buttons - nupud
+//
+$btn-padding-x:                  1rem !default;
+$btn-padding-y:                  .375rem !default;
+$btn-font-weight:                normal !default;
+$btn-transform:                   normal !default;
+$btn-font-weight:                normal !default;
+$btn-margin:                     0 0 0 0 !default;
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-border:             $btn-primary-bg 1px solid !default;
+
+$btn-secondary-color:            white !default;
+$btn-secondary-bg:               $brand-secondary !default;
+$btn-secondary-border:           darken($btn-secondary-bg, 10%) 2px solid !default;
+
+$btn-primary-color-hover:              $btn-primary-color !default;
+$btn-primary-bg-hover:                 darken($btn-primary-bg, 10%) !default;
+$btn-primary-border-hover:             darken($btn-primary-bg, 10%) 1px solid !default;
+
+$btn-secondary-color-hover:              $btn-secondary-color !default;
+$btn-secondary-bg-hover:                 darken($btn-secondary-bg, 10%) !default;
+$btn-secondary-border-hover:             darken($btn-secondary-bg, 10%) 2px solid !default;
+
+
+
+//Menu - menüü
+
+$menu-color:                     $brand-primary !default;
+$menu-bg:                        transparent !default;
+$menu-a-padding:                  0px!default;
+$menu-a-margin:                 0px 2px 0px 2px!default;
+$menu-li-margin:                 0 !default;
+$menu-li-padding:                 0 !default;
+$menu-line-height:               40px !default;
+$menu-border-top:                0px solid transparent;
+$menu-border-bottom:                0px solid $brand-primary;
+$menu-font-size:    17px !default;
+
+$menu-a-hover-bg:                 transparent !default;
+$menu-a-hover-color:             #000 !default;
+$menu-border-hover-top:                0px solid $brand-primary;
+$menu-border-hover-bottom:                0px solid $brand-primary;
+
+//Sub-menu - alammenüü 
+$sub-menu-color:                     $body-color !default;
+$sub-menu-bg:                        #eee !default;
+$sub-menu-a-padding:                 10px 15px 10px 20px!default;
+$sub-menu-a-margin:                 0px 0px 0px 0px!default;
+$sub-menu-li-margin:                 0 !default;
+$sub-menu-li-padding:                 0 !default;
+$sub-menu-line-height:               20px !default;
+$sub-menu-border-top:                0px solid transparent;
+$sub-menu-border-bottom:                0px solid $brand-primary;
+$sub-menu-font-size:           15px;
+
+$sub-menu-a-hover-bg:                 #fff !default;
+$sub-menu-a-hover-color:             $menu-color !default;
+$sub-menu-border-hover-top:                0px solid $brand-primary;
+$sub-menu-border-hover-bottom:                0px solid $brand-primary;
+
+//Sub-menu 2 - alammenüü2
+$sub2-menu-color:                     $body-color !default;
+$sub2-menu-bg:                        #ddd !default;
+$sub2-menu-a-padding:                 0px 20px 0px 20px!default;
+$sub2-menu-a-margin:                 0px 0px 0px 0px!default;
+$sub2-menu-li-margin:                 0 !default;
+$sub2-menu-li-padding:                 0 !default;
+$sub2-menu-line-height:               40px !default;
+$sub2-menu-border-top:                0px solid transparent;
+$sub2-menu-border-bottom:                0px solid $brand-primary;
+
+$sub2-menu-a-hover-bg:                 #fff !default;
+$sub2-menu-a-hover-color:             $menu-color !default;
+$sub2-menu-border-hover-top:                0px solid $brand-primary;
+$sub2-menu-border-hover-bottom:                0px solid $brand-primary;
+
+
+//Slider-slaider
+//
+$slider-height:                  350px !default;
+$slide-position:                 top !default; // pildi asetus
+
+$pagination-bg:           transparent  !default;  
+$pagination-bottom:          12px !default; 
+
+$owl-page-btn-width:               12px !default; 
+$owl-page-btn-height:              12px !default; 
+$owl-page-btn-margin:            5px 7px !default; 
+
+$owl-page-btn-border-radius:       20px !default; 
+$owl-page-btn-background:         $brand-primary !default; 
+
+
+$owl-page-btn-border:     2px solid white !default; 
+
+//Forms-vormid
+//
+$input-with:          100% !default; 
+$input-padding:     10px 10px 10px 10px !default;
+$input-margin:    5px 0px 5px 0px !default;
+$input-font-size: 1rem !default;
+$input-color:      $body-color !default;
+$input-border:   1px solid #ddd !default;
+$input-border-radius: 5px !default;
+
+//Radio-valik, võimalik ainult 1 variant
+
+$input-radio-padding:   inherit !default;
+$input-radio-margin:     inherit !default;
+
+//Checkbox-valik, võimalik rohkem kui 1 vastus
+
+$input-checkbox-padding: inherit !default;
+$input-checkbox-margin: inherit !default;
+
+//Select -alla avanev valik (ripp-menüü)
+
+$input-select-padding: 1px  1px 1px 1px !default;
+$input-select-margin: 5px 5px 5px 10px !default;
+$input-select-border: 1px  solid $gray-dark!default;
+$input-select-border-radius: 3px !default;
+
+// @import 'variables/_var-slider';
+

@@ -1,0 +1,19 @@
+@import 'variables';
+
+table
+{
+  border-width: $border-width;
+  border-color: $table-border-color;
+  background: $table-bg;
+  
+}
+
+tr:hover
+{ 
+  background-color: $table-bg-hover;
+}
+
+td
+{padding: $table-cell-padding;
+  
+}

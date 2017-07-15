@@ -1,0 +1,275 @@
+
+
+
+@mixin headings($from: 1, $to: 6){
+	@for $i from $from through $to{
+		h#{$i}{
+			@content
+		}
+	}
+}
+
+
+@mixin usual-text() {
+	p, p a, span, span a {
+		@content
+	}
+}
+
+@mixin fixed-full() {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 400;
+}
+
+@mixin trans($all, $sec, $ease) {
+
+	transition: $all $sec $ease;
+	-webkit-transition: $all $sec $ease;
+	-ms-transition: $all $sec $ease;
+}
+// https://css-tricks.com/snippets/sass/centering-mixin/
+@mixin centerer($horizontal: true, $vertical: true) {
+	position: absolute;
+	@if ($horizontal and $vertical) {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		} @else if ($horizontal) {
+			left: 50%;
+			transform: translate(-50%, 0);
+			-webkit-transform: translate(-50%, 0);
+			-ms-transform: translate(-50%, 0);
+			} @else if ($vertical) {
+				top: 50%;
+				transform: translate(0, -50%);
+				-webkit-transform: translate(0, -50%);
+				-ms-transform: translate(0, -50%);
+			}
+		}
+
+		@mixin remove-centerer() {
+			position: initial;
+			top: auto;
+			left: auto;
+			transform: none;		
+		}
+
+		@mixin bg-contain() {
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: block;
+		}
+
+		@mixin cover-img($width, $height) {
+
+			object-fit: cover;
+			object-position: 50% 50%;
+			height: $height;
+			width: $width;
+
+		}
+
+
+
+		@mixin clearfix() {
+
+			&:after {
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0;
+			}
+
+			&:before {
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0;
+			}
+
+		}
+
+		@mixin overlay {
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: rgba(0,0,0,.4);
+				display: block;
+				border-radius: $border-radius;
+			}
+
+		}
+
+		@mixin bg-img($name, $width, $height) {
+			background-image: url('../images/#{$name}');
+			max-width: $width;
+			width:100%;
+
+			height: $height;
+			display: block;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+		}
+
+		$font-size-base : 16px;
+
+		@function rem($px) {
+			@return $px / $font-size-base + rem;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin placeholder {
+		::-webkit-input-placeholder { @content }
+		:-moz-placeholder           { @content }
+		::-moz-placeholder          { @content }
+		:-ms-input-placeholder      { @content }  
+	} 
+
+
+	@mixin centerer-both() {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+
+
+@mixin placeholder() {
+
+}
+
+ 
+@mixin abs-center {
+	left: 0;  
+	right: 0; 
+	margin-left: auto;  
+	margin-right: auto; 
+	position: absolute;
+}
+
+
+
+
+@mixin trans-center {
+	top: 50%;
+	-webkit-transform: translate(0%,-50% );
+	transform: translate(0%,-50% );
+	position: absolute;
+	display: inline-block;
+
+}
+
+
+
+@mixin abs-right {
+	right: 0;
+	position: absolute;
+}
+
+@mixin flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+@mixin wrap {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+
+@mixin justify-space-around {
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+@mixin justify-space-between {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+@mixin justify-center {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+
+}
+
+@mixin items-center {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+@mixin self-center {
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
+	align-self: center;
+}
+
+@mixin content-stretch {
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+}
+
+
+@mixin flex-50prc {
+	-webkit-box-flex:50%;
+	-ms-flex:50%;
+	flex:50%;
+}
+@mixin transition {
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+
+@mixin text-uppercase {
+
+	text-transform: uppercase !important;
+	::-webkit-input-placeholder {
+
+		text-transform: uppercase !important;
+
+	}
+
+	:-moz-placeholder {
+		text-transform: uppercase !important;
+	}
+
+	::-moz-placeholder {
+		text-transform: uppercase !important;
+	}
+
+	:-ms-input-placeholder {
+		text-transform: uppercase !important;
+	}
+
+}
+ 

@@ -1,0 +1,59 @@
+@import 'variables';
+
+
+
+.slider-container  {  
+  overflow: hidden; //lehe laadimisel vältida teiste slaidide näitamist
+  margin-bottom: 30px;
+  width: 100%;
+  
+  
+  .owl-img {
+    display: block;
+    width: 100%;
+    padding-bottom: 31%;  
+    background-size: cover !important;
+    background-position:bottom left !important;
+    background-repeat:  no-repeat;
+    transition: all 30s linear;
+
+    &.animate_center {
+    background-position:bottom center !important;
+
+    }
+
+
+  }
+  
+  .owl-theme .owl-controls {
+    
+    margin-top: 0;
+  
+  }
+
+  
+  .owl-pagination {
+    
+  background: $pagination-bg;
+  position: absolute;
+  bottom: $pagination-bottom;
+    
+      
+    
+  }
+  
+  .owl-theme .owl-controls .owl-page span {
+      display: block;
+    width: $owl-page-btn-width; 
+    height: $owl-page-btn-height;
+    margin: $owl-page-btn-margin;
+   
+    border-radius: $owl-page-btn-border-radius;
+    background: $owl-page-btn-background; 
+    border: $owl-page-btn-border; //ümmarguse nupu äär
+  }
+
+  
+  
+
+}

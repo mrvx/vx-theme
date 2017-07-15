@@ -1,0 +1,54 @@
+@import 'variables';
+
+.container {
+	.btn, input[type="submit"] {
+		padding: $btn-padding-y $btn-padding-x; 
+		font-weight: $btn-font-weight;
+		text-transform: $btn-transform;
+		font-weight: $btn-font-weight;
+		margin: $btn-margin;
+		-webkit-transition: $global-transition;
+		-o-transition: $global-transition;
+		transition: $global-transition;
+
+		&.primary, &.wpcf7-submit {
+			color: $btn-primary-color;
+			background: $btn-primary-bg;
+			border-bottom: $btn-primary-border; //TODO teised ääred ka 
+
+
+			&:hover, &:focus{
+				color: $btn-primary-color-hover;
+				background: $btn-primary-bg-hover;
+				border-bottom: $btn-primary-border-hover; //TODO teised ääred ka 
+				text-decoration: none;
+				outline: none;
+
+			}
+		}
+
+
+
+		&.secondary {
+			color: $btn-secondary-color;
+			background: $btn-secondary-bg;
+			border-bottom: $btn-secondary-border; //TODO teised ääred ka 
+			text-decoration: none;
+
+			&:hover, &:focus{
+				color: $btn-secondary-color-hover;
+				background: $btn-secondary-bg-hover;
+				border-bottom: $btn-secondary-border-hover; //TODO teised ääred ka 
+				text-decoration: none;
+				outline: none;
+
+			}
+		}
+
+	}
+
+}
+
+input[type="submit"] {
+	border: none !important;
+}

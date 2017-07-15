@@ -1,0 +1,109 @@
+@import 'variables';
+@import 'mixins';
+
+
+.wpcf7 {
+
+  input[type="text"], textarea,
+  input[type="text"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="time"],
+  input[type="url"],
+  input[type="password"],
+  input[type="tel"]
+  {
+    width: $input-with;
+    padding: $input-padding;
+    margin: $input-margin;
+    font-size: $input-font-size;
+    color: $input-color;
+    border: $input-border;
+    border-radius: $input-border-radius;
+
+    &.wpcf7-not-valid {
+      border-color: $brand-danger;
+    }
+
+  }
+
+  input[type="radio"] {
+
+    padding: $input-radio-padding;
+    margin: $input-radio-margin;
+
+
+  }
+  
+  input[type="checkbox"] {
+    padding: $input-checkbox-padding;
+    margin: $input-checkbox-margin;
+
+  }
+  
+  select {
+    width: $input-with;
+    padding: $input-padding;
+
+    margin: $input-select-margin;
+    border: $input-border;
+    border-radius: $input-border-radius;
+
+    margin-left: 0; 
+    margin-right: 0;  
+
+      //  @include border-radius($input-border-radius);
+
+    }
+
+    .wpcf7-not-valid-tip {
+      display: none !important; 
+    }
+    .wpcf7-response-output {
+     position: fixed;
+     left: 0;  
+     right: 0; 
+     bottom: 0;  
+     top: 0; 
+     margin: auto;
+     z-index: 2000; 
+     max-width: 300px;
+     height: 100px;
+
+     &.wpcf7-validation-errors, &.wpcf7-mail-sent-ng {
+      background-color: $brand-warning ;
+      border:none;
+      border-radius: $input-border-radius;
+      color: #fff;
+     } 
+
+   }
+   
+
+ }
+
+ @mixin placeholder {
+  ::-webkit-input-placeholder { @content }
+  :-moz-placeholder           { @content }
+  ::-moz-placeholder          { @content }
+  :-ms-input-placeholder      { @content }  
+}
+
+@include placeholder {
+  color: $body-color;
+}
+
+.overlay {
+display: none;  
+  @include fixed-full;
+  background-color: rgba(0,0,0,.5);
+
+  &.sh {
+    display: block; 
+  }
+}
+
+

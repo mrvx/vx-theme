@@ -1,0 +1,333 @@
+@import 'variables';
+
+
+
+.container .menu-header-menu-container {
+
+	min-height: 100px;
+	height: 100%;	
+
+	ul { 
+		margin: 0;
+		padding: 0;
+		height: 100%;	
+
+
+
+		@media #{$laptop-up} {
+			/* margin-top: 30px;	 */
+			@include flex;
+			@include wrap;
+			@include justify-space-between;
+			height: 100%;	
+		}
+
+		
+	}
+
+	li {
+
+		@include self-center();
+
+		list-style: none;
+		display: inline-block;
+		//float: left;
+		margin: $menu-li-margin;
+		padding: $menu-li-padding;
+		position: relative;
+		padding-left: $gut;
+		padding-right: 	$gut;
+
+
+		
+
+		&:hover>* {
+			display: block;
+			z-index: 100; //kuna alumine kiht on positsioon absoluudiga pandud, siis tuli see tagasi tõsta relatiivse kihi juurde, et menüü ära ei kaoks
+		}
+		
+	}
+
+	a {
+
+		margin: $menu-a-margin;
+		padding: $menu-a-padding;
+		display: block;
+		color: $menu-color;
+		text-decoration: none;
+		background: $menu-bg;
+		line-height: $menu-line-height;
+		border-top: $menu-border-top;
+		border-bottom: $menu-border-bottom;
+		font-size: $menu-font-size;
+		text-transform: uppercase;
+		transition: $global-transition;
+		font-weight: 	bold;
+		/* letter-spacing: .07em; */
+		position: relative;
+		&:hover, &:focus {
+			color: $menu-a-hover-color;
+			background: $menu-a-hover-bg;
+			border-top: $menu-border-hover-top;
+			border-bottom: $menu-border-hover-bottom;
+			text-decoration: none;
+
+		} 
+		
+		&.selected:after {
+			content: '';
+			display: inline-block;	
+			width: 100%;
+			height: 3px;	
+			position: absolute;
+			bottom: 0;
+			left: 0;	
+			right: 0;	
+			margin-left: auto;	
+			margin-right: auto;	
+			background-color: #000;
+
+		}
+
+
+
+	}
+
+	.current-menu-item {
+		color: $menu-a-hover-color !important;
+		background: $menu-a-hover-bg;
+
+		&:hover, &:focus {
+			border: none;
+		}
+
+		a {
+			border: none;
+			margin: 0;
+			border-top: $menu-border-hover-top;
+			color: $menu-a-hover-color !important;
+		}
+	}
+
+}
+
+.container #navmenu {
+	.sub-menu { // TODO vaja oleks see panna ka muutujatesse
+		position: absolute;
+		display: none;  
+		padding-left: 0;
+		margin-left: 0;
+		background-color: $sub-menu-bg;
+		padding-top: 0px;
+		padding-bottom: 10px;
+		border-bottom: 3px solid rgb(255, 102, 0);
+		width: 200px;
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			list-style: none;
+			float: none;
+			margin: $sub-menu-li-margin;
+			padding: $sub-menu-li-padding;
+			position: relative;
+
+		}
+
+		a {
+			margin: $sub-menu-a-margin;
+			padding: $sub-menu-a-padding;
+			display: block;
+			color: $sub-menu-color;
+			text-decoration: none;
+			background: $sub-menu-bg;
+			line-height: $sub-menu-line-height;
+			border-top: $sub-menu-border-top;
+			border-bottom: $sub-menu-border-bottom;
+			font-size: $sub-menu-font-size;
+
+			-webkit-transition: $global-transition;
+			-o-transition: $global-transition;
+			transition: $global-transition;
+
+			&:hover, &:focus {
+				color: $sub-menu-a-hover-color;
+				background: $sub-menu-a-hover-bg;
+				border-top: $sub-menu-border-hover-top;
+				border-bottom: $sub-menu-border-hover-bottom;
+
+			} 
+		}
+
+	}
+
+	.sub-menu .sub-menu {
+		position: absolute;
+		left: 100%;
+		top: 0;
+
+		background-color: $sub2-menu-bg;
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			list-style: none;
+			float: none;
+			margin: $sub2-menu-li-margin;
+			padding: $sub2-menu-li-padding;
+
+		}
+
+		a {
+			margin: $sub2-menu-a-margin;
+			padding: $sub2-menu-a-padding;
+			display: block;
+			color: $sub2-menu-color;
+			text-decoration: none;
+			background: $sub2-menu-bg;
+			line-height: $sub2-menu-line-height;
+			border-top: $sub2-menu-border-top;
+			border-bottom: $sub2-menu-border-bottom;
+
+			&:hover, &:focus {
+				color: $sub2-menu-a-hover-color;
+				background: $sub2-menu-a-hover-bg;
+				border-top: $sub2-menu-border-hover-top;
+				border-bottom: $sub2-menu-border-hover-bottom;
+
+			} 
+		}
+
+	}
+
+}
+
+.mobileMenu {
+	display: none;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-color: transparent;
+	top: 10px;
+	right: -10px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: center;
+	z-index: 1000;
+	color: #000;
+
+	&.open {
+		
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: transparent;
+		i:before {
+			content: '✕';
+			font-size: 40px;
+		}
+	}
+
+	i {
+		color: #000;
+		line-height: 50px;
+		font-size: 50px;
+	}
+	
+	
+}
+
+.mobile {
+	display: none;
+}
+
+@media screen and (max-width: $max-laptop) {
+	.mobileMenu {
+		display: block;
+
+	}
+	
+	.mobile {
+		display: block;
+	}
+
+	.topMenu {
+		display: none !important;
+	}
+	.container .menu{
+		background-color: rgba(255,255,255,.95);
+		visibility: hidden;
+		opacity: 0;
+		transition: all .3s;
+		position: fixed;
+		z-index: 300;
+		width: 100%;
+		top: 0px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		&.open {
+			display: block;
+			visibility: visible;
+			opacity: 1;
+
+
+
+
+		}
+		
+		@media screen and (max-width: $max-mobile-lg) {
+			max-width: 100%;
+		}
+
+
+	}
+
+	.container #navmenu {
+
+		li {
+			width: 100%;
+			float: none;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			margin-left: 0;
+			margin-right: 0;
+
+			&.current-menu-item {
+				background-color: transparent;
+				
+				a {
+					border-top-color: transparent !important;
+				}
+			}
+
+			a {
+				color: #000;
+				border-top: 3px solid transparent !important;
+				margin-left: 0;
+				background-color: transparent;
+				margin-right: 0;
+				line-height: 2;
+				padding-left: 0px;
+				&:hover {
+					background-color: transparent;
+					color: $brand-primary;
+				}
+
+				&.selected {
+					&:after {
+						max-width: 120px;
+					}
+				}
+
+			}
+
+		}
+	}
+}

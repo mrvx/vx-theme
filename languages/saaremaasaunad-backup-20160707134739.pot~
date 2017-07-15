@@ -1,0 +1,139 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Saaremaa Saunad\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Tue Jul 05 2016 16:11:23 GMT+0300 (FLE Daylight Time)\n"
+"POT-Revision-Date: Thu Jul 07 2016 16:47:33 GMT+0300 (FLE suveaeg)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: arendaja <veiko.teekel@gmail.com>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: et_EE\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../404.php:3
+msgid "404"
+msgstr ""
+
+#: ../404.php:6
+msgid "Page not found"
+msgstr ""
+
+#: ../comments.php:14
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:25
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:26
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:27
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:32
+msgid "Comments are closed."
+msgstr ""
+
+#: ../functions.php:27
+msgid "Header Menu"
+msgstr ""
+
+#: ../functions.php:28
+msgid "Footer Menu"
+msgstr ""
+
+#: ../functions.php:29
+msgid "Top Menu"
+msgstr ""
+
+#: ../functions.php:44
+msgid "Menu principal"
+msgstr ""
+
+#: ../functions.php:79
+msgid "Tooted"
+msgstr ""
+
+#: ../functions.php:80
+msgid "toode"
+msgstr ""
+
+#: ../functions.php:116
+msgid "Slaidid"
+msgstr ""
+
+#: ../functions.php:117
+msgid "slaid"
+msgstr ""
+
+#: ../searchform.php:2 ../searchform.php:3 ../searchform.php:4
+msgid "Search"
+msgstr ""
+
+#. Name of the template
+msgid "Avaleht"
+msgstr ""
+
+#: ../breadcrumb.php:9
+msgid "Home"
+msgstr ""
+
+#. Name of the theme
+msgid "Saaremaa Saunad"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://github.com/edouardl/minimal-blank-theme"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"A simple, light and minimal blank theme, add your code to start your own "
+"theme"
+msgstr ""
+
+#. Author of the theme
+msgid "Pierre-Olivier Blouin, Edouard Labre"
+msgstr ""
+
+#: ../home.php:32
+msgid "Special offers"
+msgstr ""
+
+#: ../taxonomy-tooterubriik.php:59
+msgid "previous"
+msgstr ""
+
+#: ../taxonomy-tooterubriik.php:61
+msgid "next"
+msgstr ""
+
+#: ../breadcrumb.php:213
+msgid "Page"
+msgstr ""
+
+#: ../services.php:16 ../services.php:29 ../services.php:41 ../services.php:55
+msgid "Read more"
+msgstr ""

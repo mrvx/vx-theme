@@ -1,0 +1,18 @@
+{
+  "name": "ugandi_onepage",
+  "version": "0.0.1",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "grunt-sass": "0.x.x"
+  },
+  "devDependencies": {
+    "vows": "0.5.x"
+  },
+  "author": "Veiko Teekel",
+  "license": "ISC",
+  "keywords": [],
+  "description": "Kirjeldus sellele test projektile"
+}
