@@ -3,7 +3,7 @@
 
 
 // Add your theme support ( cf :  http://codex.wordpress.org/Function_Reference/add_theme_support )
-function customThemeSupport() {
+/*function customThemeSupport() {
 	global $wp_version;
 	
 	add_theme_support( 'menus' );
@@ -18,7 +18,7 @@ function customThemeSupport() {
 	} else {
 		automatic_feed_links();
 	}
-}
+}*/
 add_action( 'after_setup_theme', 'customThemeSupport' );
 
 function register_my_menus() {
