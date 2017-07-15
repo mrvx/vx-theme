@@ -8,8 +8,6 @@ get_header(); ?>
 
 
 <div id="content" class="full-width">
-<h1>JOHANNES LÄHEB VARSTI SOOME</h1>
-
 
 <?php echo do_shortcode('[ew_slider]'); ?>
 
