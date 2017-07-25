@@ -11,7 +11,6 @@ get_header(); ?>
 	<?php while(have_posts()): the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<h1>TEST TEST TEST</h1>
 			<?php
 //var_dump(get_fields());
 // check if the flexible content field has rows of data
