@@ -8956,7 +8956,7 @@ footer {
     .menu-header-menu-container, .menu {
       display: block;
       width: auto;
-      left: 350px; } }
+      /* left: 350px;     */ } }
   .menu-header-menu-container ul, .menu ul {
     padding-left: 0;
     margin-left: 0;
