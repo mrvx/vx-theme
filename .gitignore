@@ -18,5 +18,5 @@ sitemap.xml.gz
 
 .project
 node_modules/
-style.css.map
+css/style.css.map
 
