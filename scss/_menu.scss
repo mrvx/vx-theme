@@ -2,7 +2,7 @@
 
 
 
-.container .menu-header-menu-container {
+.container .menu-header-menu-container, .menu {
 
 	min-height: 100px;
 	height: 100%;	
@@ -111,7 +111,7 @@
 
 }
 
-.container #navmenu {
+.container #navmenu, .menu {
 	.sub-menu { // TODO vaja oleks see panna ka muutujatesse
 		position: absolute;
 		display: none;  

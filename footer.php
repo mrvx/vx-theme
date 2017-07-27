@@ -19,7 +19,7 @@
 
 
 		<small class="inline-block no-p np-m abs-right copyright fz10"><i class="fa fa-copyright" aria-hidden="true"></i>
-			<?php echo date("Y"); ?> Roopa Auto OÜ
+			<?php echo date("Y"); ?> VX-THEME
 		</small>
 
 	</div>

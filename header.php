@@ -5,7 +5,7 @@
 <!--[if IE 9 ]> <html class="no-js ie ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js " <?php language_attributes(); ?>  > <!--<![endif]-->
 
-<title>Roopa Auto</title>
+<title><?php wp_title(''); echo ' | ';  bloginfo( 'name' ); ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="<?php the_author_meta( 'display_name', 1 ); ?>">
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -118,7 +118,7 @@ wp_head();
 							</a>
 							<div class="inner flex wrap relative">	
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
-									<div style="background-image: url('<?php echo bloginfo('template_directory'); ?>/images/roopaauto_logo.png');" alt="Roopa auto">
+									<div style="background-image: url('<?php echo bloginfo('template_directory'); ?>/images/logo.png');" alt="Roopa auto">
 									</div>
 								</a>
 
