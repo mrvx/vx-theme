@@ -17,7 +17,6 @@
 <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/apple-touch-icon.png" />
 <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico" />
 
-<link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/style.css">
 <link rel="stylesheet" href="<?php echo bloginfo('template_directory'); ?>/css/style.css">
 
 

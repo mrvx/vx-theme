@@ -394,6 +394,7 @@ $color: #b3e5fc;
     width: 100%;    
 }
 
+/*suured alad klassid*/
 
 .rightbottom {
     right: 0px;
@@ -414,7 +415,26 @@ $color: #b3e5fc;
     top: 0;
 }
 
-
+.centerright {
+     
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    position: absolute;
+    display: inline-block;
+    margin-left: auto;
+}
+.centerleft {
+     
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    position: absolute;
+    display: inline-block;
+    margin-right: auto;
+}
 .centercenter {
     left: 0;
     right: 0;
@@ -426,7 +446,4 @@ $color: #b3e5fc;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
-
-
 }

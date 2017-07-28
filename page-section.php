@@ -51,6 +51,17 @@ get_header(); ?>
 					</div>
 				</div>
 			</section>
+            <?php endif;
+
+				if( get_row_layout() == 'siteorigin_lehealad' ): ?>
+			<section class="post-content <?php the_sub_field('klass'); ?>" >
+
+				<div class="container p-t-defx2">
+					<div class="acf-content">
+						<?php the_sub_field('lehe_ehitus'); ?>
+					</div>
+				</div>
+			</section>
 
 		<?php endif;
 		if( get_row_layout() == '23_ja_13' ): ?>
@@ -118,6 +129,15 @@ get_header(); ?>
 				<?php
 				endif;
 
+
+
+
+
+
+
+
+
+
 				endwhile;
 
 				else :
@@ -132,13 +152,8 @@ get_header(); ?>
 
 
 				<div class="clearfix">	</div>
-				<div class="p-defx2 full-width">	</div>
 				
-			
-
-				<div class="post-content hide hidden">
-					<?php the_content(); ?>
-				</div>
+		
 
 			</div>
 		<?php endwhile; ?>
