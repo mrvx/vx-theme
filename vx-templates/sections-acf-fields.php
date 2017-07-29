@@ -615,7 +615,7 @@ acf_add_local_field_group(array (
 						array (
 							'key' => 'field_597b41b029b12',
 							'label' => 'Klass',
-							'name' => 'class-siteorigin',
+							'name' => 'klass',
 							'type' => 'text',
 							'instructions' => '',
 							'required' => 0,

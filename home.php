@@ -16,7 +16,7 @@ get_header(); ?>
 
 
 			<?php
-//var_dump(get_fields());
+
 // check if the flexible content field has rows of data
 			if( have_rows('suured-alad') ):
 
