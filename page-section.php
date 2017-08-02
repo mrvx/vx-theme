@@ -21,7 +21,7 @@ get_header(); ?>
 
 		// check current row layout
 			if( get_row_layout() == 'galerii' ): ?>
-			<section id="<?php the_sub_field('id-1'); ?>" class="<?php the_sub_field('class'); ?>">	
+			<section id="<?php the_sub_field('id-1'); ?>" class="<?php the_sub_field('class'); ?> relative">	
 				<div class="container no-pl no-pr m-b-defx2">
 
 					<div class="acf-gallery flex wrap justify-space-between lightgalleryElegant">
@@ -43,7 +43,7 @@ get_header(); ?>
 			endif; 
 
 			if( get_row_layout() == 'sisu' ): ?>
-			<section class="post-content <?php the_sub_field('klass'); ?>" id="<?php the_sub_field('id-2'); ?>">
+			<section class="post-content <?php the_sub_field('klass'); ?> relative" id="<?php the_sub_field('id-2'); ?>">
 
 				<div class="container p-t-defx2">
 					<div class="acf-content">
@@ -65,7 +65,7 @@ get_header(); ?>
 
 		<?php endif;
 		if( get_row_layout() == '23_ja_13' ): ?>
-		<section class="post-content <?php the_sub_field('klass'); ?>" id="<?php the_sub_field('id-2'); ?>">
+		<section class="post-content <?php the_sub_field('klass'); ?> relative" id="<?php the_sub_field('id-2'); ?>">
 
 			<div class="container">
 				<div class="row">	
@@ -85,7 +85,7 @@ get_header(); ?>
 			endif;
 
 			if( get_row_layout() == '13_13_13_tekst' ): ?>
-			<section class="post-content <?php the_sub_field('class-1-3'); ?>" id="<?php the_sub_field('id-2'); ?>">
+			<section class="post-content <?php the_sub_field('class-1-3'); ?> relative" id="<?php the_sub_field('id-2'); ?>">
 
 				<div class="container p-defx2">
 					<div class="row">
@@ -108,7 +108,7 @@ get_header(); ?>
 				endif;
 
 				if( get_row_layout() == 'full-image' ): ?>
-				<section class="<?php the_sub_field('klass'); ?> no-padding full-image" id="<?php the_sub_field('id-3'); ?>">
+				<section class="<?php the_sub_field('klass'); ?> no-padding full-image relative" id="<?php the_sub_field('id-3'); ?>">
 
 					<div class="bg-img relative" style="background-image: url('<?php the_sub_field('full-img'); ?>'); 
 						padding-bottom: <?php the_sub_field('pildi_korgus'); ?>%; background-position: <?php the_sub_field('pildi_joondus'); ?>;">

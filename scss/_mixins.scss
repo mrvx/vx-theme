@@ -25,6 +25,8 @@
 	z-index: 400;
 }
 
+
+
 @mixin trans($all, $sec, $ease) {
 
 	transition: $all $sec $ease;
@@ -273,3 +275,9 @@
 
 }
  
+
+ @mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
