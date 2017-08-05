@@ -73,6 +73,8 @@ footer {
     max-width: 200px;
     height: 80px;
     margin-top: 5px !important;
+    position: relative;
+    z-index: 1000;
 
 
     @media #{$laptop-up} {
